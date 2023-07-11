@@ -150,8 +150,8 @@ if __name__ == '__main__':
     print_args(vars(opt))
 
     # Model
-    model = _create(name=opt.model, pretrained=True, channels=3, classes=2, autoshape=True, verbose=True)
-    # model = custom(path='path/to/model.pt')  # custom
+    # model = _create(name=opt.model, pretrained=True, channels=3, classes=2, autoshape=True, verbose=True)
+    model = custom(path='yolov5s.pt')  # custom
 
     # Images
     imgs = [
